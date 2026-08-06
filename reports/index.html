@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solana Ecosystem Dashboard</title>
+<style>
+:root { color-scheme: dark; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #0b1220; color: #e2e8f0; font-family: 'Segoe UI', system-ui, sans-serif; padding: 24px; }
+h1 { font-size: 1.6rem; margin-bottom: 4px; }
+h2 { font-size: 1.15rem; margin: 28px 0 12px; color: #93c5fd; border-bottom: 1px solid #1e293b; padding-bottom: 6px; }
+.sub { color: #64748b; font-size: .85rem; margin-bottom: 20px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px; }
+.card { background: #111a2e; border: 1px solid #1e293b; border-radius: 10px; padding: 16px; }
+.card.wide { grid-column: 1 / -1; }
+.card-title { color: #94a3b8; font-size: .8rem; text-transform: uppercase; letter-spacing: .5px; margin-bottom: 8px; }
+.card-value { font-size: 1.5rem; font-weight: 700; }
+.card-sub { color: #64748b; font-size: .8rem; margin-top: 4px; }
+.anomaly-box { background: #1a1424; border: 1px solid #7c3aed; border-radius: 10px; padding: 14px 16px; margin: 18px 0; }
+.anomaly-box h3 { color: #c4b5fd; margin-bottom: 8px; font-size: 1rem; }
+.anomaly { padding: 6px 10px; border-radius: 6px; margin: 4px 0; font-size: .9rem; }
+.anomaly.warning { background: #451a03; color: #fdba74; }
+.anomaly.info { background: #0c4a6e; color: #7dd3fc; }
+table { width: 100%; border-collapse: collapse; margin-top: 8px; font-size: .9rem; }
+th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #1e293b; }
+th { color: #94a3b8; font-weight: 600; }
+code { background: #0b1220; padding: 2px 6px; border-radius: 4px; font-size: .85rem; }
+.dist-bar { display: flex; height: 18px; border-radius: 8px; overflow: hidden; margin: 10px 0; }
+.dist-seg { height: 100%; }
+.legend { font-size: .85rem; color: #94a3b8; }
+.dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 4px; }
+.footer { margin-top: 30px; color: #475569; font-size: .78rem; text-align: center; }
+@media (max-width: 600px) { body { padding: 14px; } .card-value { font-size: 1.2rem; } }
+</style></head><body>
+<h1>Solana Ecosystem Dashboard</h1>
+<div class="sub">Generated 2026-08-06T13:18:07.714104+00:00 UTC &nbsp;·&nbsp; RPC: <code>https://api.mainnet-beta.solana.com</code> &nbsp;·&nbsp; auto-updating</div>
+
+<h2>Network &amp; Market Overview</h2>
+<div class="grid">
+
+    <div class="card">
+      <div class="card-title">SOL Price</div>
+      <div class="card-value" style="color:#ef4444">$72.94</div>
+      <div class="card-sub">-1.28%</div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Chain TVL</div>
+      <div class="card-value" style="color:#4f8cff">$4.76B</div>
+      <div class="card-sub">DeFiLlama</div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Protocol Market Cap</div>
+      <div class="card-value" style="color:#4f8cff">$42.57B</div>
+      <div class="card-sub">DeFiLlama</div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">TPS (recent)</div>
+      <div class="card-value" style="color:#4f8cff">3710</div>
+      <div class="card-sub">performance sample</div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Slot</div>
+      <div class="card-value" style="color:#4f8cff">437590255</div>
+      <div class="card-sub">epoch 1012 · 406256/432000</div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Active Validators</div>
+      <div class="card-value" style="color:#4f8cff">693</div>
+      <div class="card-sub">7 delinquent</div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Total Staked</div>
+      <div class="card-value" style="color:#4f8cff">$434.42M</div>
+      <div class="card-sub">SOL</div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">Stablecoin Supply</div>
+      <div class="card-value" style="color:#4f8cff">n/a</div>
+      
+    </div>
+
+    <div class="card">
+      <div class="card-title">SOL Supply</div>
+      <div class="card-value" style="color:#4f8cff">$631629084.97B</div>
+      <div class="card-sub">circulating $581306136.26B</div>
+    </div>
+
+    <div class="card">
+      <div class="card-title">24h Volume</div>
+      <div class="card-value" style="color:#4f8cff">$41.20M</div>
+      <div class="card-sub">Gate.io SOL_USDT</div>
+    </div>
+</div>
+<div class="card wide">
+          <div class="card-title">Top Validators by Stake</div>
+          <table><tr><th>#</th><th>Validator</th><th>Stake</th><th>Commission</th></tr><tr><td>1</td><td><code>Fd7btgySsrjuo25C…</code></td><td>$16.81M</td><td>7%</td></tr><tr><td>2</td><td><code>HEL1USMZKAL2odpN…</code></td><td>$16.00M</td><td>0%</td></tr><tr><td>3</td><td><code>JUPiTERrZqgf1jUy…</code></td><td>$12.47M</td><td>5%</td></tr><tr><td>4</td><td><code>DRpbCBMxVnDK7maP…</code></td><td>$12.27M</td><td>0%</td></tr><tr><td>5</td><td><code>C8Bey3LKVJHVqN6x…</code></td><td>$9.19M</td><td>7%</td></tr></table>
+        </div>
+<h2>Staking Distribution</h2>
+
+        <div class="dist-bar">
+          <div class="dist-seg" style="width:100.0%;background:#22c55e" title="Active $434.42M"></div>
+          <div class="dist-seg" style="width:0.0%;background:#ef4444" title="Delinquent $1.83K"></div>
+        </div>
+        <div class="legend"><span class="dot" style="background:#22c55e"></span>Active $434.42M &nbsp;
+        <span class="dot" style="background:#ef4444"></span>Delinquent $1.83K</div>
+<div class="footer">Source: Solana RPC · DeFiLlama · Gate.io · Generated by solana-ecosystem-dashboard (open-source)</div>
+</body></html>
