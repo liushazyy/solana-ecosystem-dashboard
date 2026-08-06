@@ -1,0 +1,26 @@
+name: solana-rpc-collect
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 4 * * *'   # daily, low frequency (overseas runner cost control)
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Run RPC collector
+        run: python scripts/rpc_collect.py
+      - name: Commit snapshot back
+        run: |
+          git config user.name "solana-dashboard-bot"
+          git config user.email "bot@users.noreply.github.com"
+          git add reports/rpc_snapshot.json
+          git diff --cached --quiet || git commit -m "chore: update RPC snapshot [skip ci]"
+          git push
