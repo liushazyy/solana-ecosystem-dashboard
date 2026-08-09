@@ -1,3 +1,7 @@
+<p align="center"><b><a href="https://toolgen.xyz">玄境科技 Xuanjing Tech</a></b> · AI Agent 驱动的一人科技公司 · 软件定制 / AI Agent / 安全审计</p>
+
+---
+
 # Solana Ecosystem Auto-Updating Report & Interactive Dashboard
 
 An automated, dependency-light report on the current state of the Solana
