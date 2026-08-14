@@ -1,88 +1,88 @@
 {
   "endpoint": "https://api.mainnet-beta.solana.com",
-  "collected_at": "2026-08-13T05:37:35.389265+00:00",
+  "collected_at": "2026-08-14T05:29:10.909117+00:00",
   "health": "ok",
-  "slot": 438959089,
-  "block_time": 1786599442,
+  "slot": 439165216,
+  "block_time": 1786685337,
   "epoch_info": {
-    "absoluteSlot": 438959090,
-    "blockHeight": 417010859,
+    "absoluteSlot": 439165217,
+    "blockHeight": 417216631,
     "epoch": 1016,
-    "slotIndex": 47090,
+    "slotIndex": 253217,
     "slotsInEpoch": 432000,
-    "transactionCount": 537692562848
+    "transactionCount": 538013542208
   },
-  "tps": 3059.116666666667,
+  "tps": 3275.616666666667,
   "performance_samples": [
     {
-      "numNonVoteTransactions": 79220,
-      "numSlots": 142,
-      "numTransactions": 176380,
-      "samplePeriodSecs": 60,
-      "slot": 438959030
-    },
-    {
-      "numNonVoteTransactions": 83172,
-      "numSlots": 143,
-      "numTransactions": 181056,
-      "samplePeriodSecs": 60,
-      "slot": 438958888
-    },
-    {
-      "numNonVoteTransactions": 69919,
+      "numNonVoteTransactions": 80354,
       "numSlots": 144,
-      "numTransactions": 167476,
+      "numTransactions": 179109,
       "samplePeriodSecs": 60,
-      "slot": 438958745
+      "slot": 439165182
     },
     {
-      "numNonVoteTransactions": 69447,
-      "numSlots": 142,
-      "numTransactions": 166865,
+      "numNonVoteTransactions": 103480,
+      "numSlots": 146,
+      "numTransactions": 203111,
       "samplePeriodSecs": 60,
-      "slot": 438958601
+      "slot": 439165038
     },
     {
-      "numNonVoteTransactions": 83407,
+      "numNonVoteTransactions": 99521,
+      "numSlots": 147,
+      "numTransactions": 200263,
+      "samplePeriodSecs": 60,
+      "slot": 439164892
+    },
+    {
+      "numNonVoteTransactions": 127851,
       "numSlots": 144,
-      "numTransactions": 181448,
+      "numTransactions": 226461,
       "samplePeriodSecs": 60,
-      "slot": 438958459
+      "slot": 439164745
     },
     {
-      "numNonVoteTransactions": 75393,
-      "numSlots": 145,
-      "numTransactions": 174033,
-      "samplePeriodSecs": 60,
-      "slot": 438958315
-    },
-    {
-      "numNonVoteTransactions": 88595,
+      "numNonVoteTransactions": 120733,
       "numSlots": 144,
-      "numTransactions": 187525,
+      "numTransactions": 219139,
       "samplePeriodSecs": 60,
-      "slot": 438958170
+      "slot": 439164601
     },
     {
-      "numNonVoteTransactions": 76311,
-      "numSlots": 143,
-      "numTransactions": 173810,
+      "numNonVoteTransactions": 103688,
+      "numSlots": 146,
+      "numTransactions": 202997,
       "samplePeriodSecs": 60,
-      "slot": 438958026
+      "slot": 439164457
     },
     {
-      "numNonVoteTransactions": 78217,
-      "numSlots": 142,
-      "numTransactions": 175873,
+      "numNonVoteTransactions": 124619,
+      "numSlots": 144,
+      "numTransactions": 223466,
       "samplePeriodSecs": 60,
-      "slot": 438957883
+      "slot": 439164311
     },
     {
-      "numNonVoteTransactions": 84475,
-      "numSlots": 145,
-      "numTransactions": 183547,
+      "numNonVoteTransactions": 88054,
+      "numSlots": 137,
+      "numTransactions": 181381,
       "samplePeriodSecs": 60,
-      "slot": 438957741
+      "slot": 439164167
+    },
+    {
+      "numNonVoteTransactions": 92350,
+      "numSlots": 144,
+      "numTransactions": 190882,
+      "samplePeriodSecs": 60,
+      "slot": 439164030
+    },
+    {
+      "numNonVoteTransactions": 95644,
+      "numSlots": 147,
+      "numTransactions": 196537,
+      "samplePeriodSecs": 60,
+      "slot": 439163886
     }
   ],
   "active_validators": 688,
@@ -125,10 +125,10 @@
     "delinquent_sol": 60088.64
   },
   "supply": {
-    "total": 632136115450249466,
-    "circulating": 582614494565443285,
-    "non_circulating": 49521620884806181
+    "total": 632135275492039185,
+    "circulating": 582613654572989804,
+    "non_circulating": 49521620919049381
   },
   "sample_address": "So11111111111111111111111111111111111111112",
-  "sample_balance_lamports": 1687609317220
+  "sample_balance_lamports": 1687673411145
 }
