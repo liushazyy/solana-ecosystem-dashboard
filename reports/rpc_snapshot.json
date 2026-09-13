@@ -1,92 +1,92 @@
 {
   "endpoint": "https://api.mainnet-beta.solana.com",
-  "collected_at": "2026-09-12T08:20:18.030298+00:00",
+  "collected_at": "2026-09-13T08:47:22.155034+00:00",
   "health": "ok",
-  "slot": 446382460,
-  "block_time": 1789201207,
+  "slot": 446660854,
+  "block_time": 1789289232,
   "epoch_info": {
-    "absoluteSlot": 446382461,
-    "blockHeight": 424425269,
+    "absoluteSlot": 446660857,
+    "blockHeight": 424703550,
     "epoch": 1033,
-    "slotIndex": 126461,
+    "slotIndex": 404857,
     "slotsInEpoch": 432000,
-    "transactionCount": 547663228287
+    "transactionCount": 547982859004
   },
-  "tps": 3468.1,
+  "tps": 3543.766666666667,
   "performance_samples": [
     {
-      "numNonVoteTransactions": 78281,
+      "numNonVoteTransactions": 79657,
       "numSlots": 190,
-      "numTransactions": 207220,
+      "numTransactions": 207757,
       "samplePeriodSecs": 60,
-      "slot": 446382480
+      "slot": 446660846
     },
     {
-      "numNonVoteTransactions": 74439,
-      "numSlots": 191,
-      "numTransactions": 203562,
-      "samplePeriodSecs": 60,
-      "slot": 446382290
-    },
-    {
-      "numNonVoteTransactions": 70853,
-      "numSlots": 191,
-      "numTransactions": 199442,
-      "samplePeriodSecs": 60,
-      "slot": 446382099
-    },
-    {
-      "numNonVoteTransactions": 80478,
-      "numSlots": 191,
-      "numTransactions": 209444,
-      "samplePeriodSecs": 60,
-      "slot": 446381908
-    },
-    {
-      "numNonVoteTransactions": 68623,
-      "numSlots": 191,
-      "numTransactions": 197493,
-      "samplePeriodSecs": 60,
-      "slot": 446381717
-    },
-    {
-      "numNonVoteTransactions": 76467,
+      "numNonVoteTransactions": 73765,
       "numSlots": 192,
-      "numTransactions": 205971,
+      "numTransactions": 203235,
       "samplePeriodSecs": 60,
-      "slot": 446381526
+      "slot": 446660656
     },
     {
-      "numNonVoteTransactions": 80392,
-      "numSlots": 187,
-      "numTransactions": 206641,
+      "numNonVoteTransactions": 75670,
+      "numSlots": 192,
+      "numTransactions": 205383,
       "samplePeriodSecs": 60,
-      "slot": 446381334
+      "slot": 446660464
     },
     {
-      "numNonVoteTransactions": 75001,
+      "numNonVoteTransactions": 76114,
+      "numSlots": 189,
+      "numTransactions": 202699,
+      "samplePeriodSecs": 60,
+      "slot": 446660272
+    },
+    {
+      "numNonVoteTransactions": 76075,
       "numSlots": 188,
-      "numTransactions": 201956,
+      "numTransactions": 203461,
       "samplePeriodSecs": 60,
-      "slot": 446381147
+      "slot": 446660083
     },
     {
-      "numNonVoteTransactions": 68207,
+      "numNonVoteTransactions": 71298,
       "numSlots": 193,
-      "numTransactions": 198231,
+      "numTransactions": 201500,
       "samplePeriodSecs": 60,
-      "slot": 446380959
+      "slot": 446659895
     },
     {
-      "numNonVoteTransactions": 77982,
-      "numSlots": 192,
-      "numTransactions": 208086,
+      "numNonVoteTransactions": 96664,
+      "numSlots": 187,
+      "numTransactions": 222682,
       "samplePeriodSecs": 60,
-      "slot": 446380766
+      "slot": 446659702
+    },
+    {
+      "numNonVoteTransactions": 94487,
+      "numSlots": 180,
+      "numTransactions": 215481,
+      "samplePeriodSecs": 60,
+      "slot": 446659515
+    },
+    {
+      "numNonVoteTransactions": 83767,
+      "numSlots": 186,
+      "numTransactions": 209073,
+      "samplePeriodSecs": 60,
+      "slot": 446659335
+    },
+    {
+      "numNonVoteTransactions": 83293,
+      "numSlots": 192,
+      "numTransactions": 212626,
+      "samplePeriodSecs": 60,
+      "slot": 446659149
     }
   ],
-  "active_validators": 678,
-  "delinquent_validators": 12,
+  "active_validators": 677,
+  "delinquent_validators": 13,
   "top_validators": [
     {
       "pubkey": "Fd7btgySsrjuo25CJCj7oE7VPMyezDhnx7pZkj2v69Nk",
@@ -121,14 +121,14 @@
   ],
   "total_staked_sol": 436837680.8,
   "stake_distribution": {
-    "active_sol": 435137391.51,
-    "delinquent_sol": 1700289.29
+    "active_sol": 435009113.55,
+    "delinquent_sol": 1828567.26
   },
   "supply": {
-    "total": 633924318405206696,
-    "circulating": 586633042881064669,
-    "non_circulating": 47291275524142027
+    "total": 633923476372877384,
+    "circulating": 586644699226025756,
+    "non_circulating": 47278777146851628
   },
   "sample_address": "So11111111111111111111111111111111111111112",
-  "sample_balance_lamports": 1822135789677
+  "sample_balance_lamports": 1822654674056
 }
